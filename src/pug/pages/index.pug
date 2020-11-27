@@ -1,0 +1,188 @@
+extends ../layouts/default
+
+block variables
+    - title = 'OpenUnited';
+
+block content
+    // Section Hero
+    section.hero
+        .hero__image(data-aos='fade-down-right' data-aos-delay='2000' data-aos-duration='1000'): img(src='assets/img/logo-outline-big.png' alt='OpenUnited' title='OpenUnited')
+        .hero__decor
+            svg(width='666' height='855' viewbox='0 0 666 855' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M8.53848 30.2887L60 0.57735L111.462 30.2887V89.7113L60 119.423L8.53848 89.7113V30.2887Z' stroke='white' stroke-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1200' data-aos-delay='50')
+                path(d='M178 0L229.962 30V90L178 120L126.038 90V30L178 0Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='100')
+                path(d='M296 0L347.962 30V90L296 120L244.038 90V30L296 0Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='150')
+                path(d='M414 0L465.962 30V90L414 120L362.038 90V30L414 0Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='200')
+                path(d='M532 0L583.962 30V90L532 120L480.038 90V30L532 0Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='250')
+                path(d='M650 0L701.962 30V90L650 120L598.038 90V30L650 0Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='300')
+                path(d='M67.5385 135.289L119 105.577L170.462 135.289V194.711L119 224.423L67.5385 194.711V135.289Z' stroke='white' stroke-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='350')
+                path(d='M237 105L288.962 135V195L237 225L185.038 195V135L237 105Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='400')
+                path(d='M355 105L406.962 135V195L355 225L303.038 195V135L355 105Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='450')
+                path(d='M473 105L524.962 135V195L473 225L421.038 195V135L473 105Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='500')
+                path(d='M591 105L642.962 135V195L591 225L539.038 195V135L591 105Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='550')
+                path(d='M126.538 240.289L178 210.577L229.462 240.289V299.711L178 329.423L126.538 299.711V240.289Z' stroke='white' stroke-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='600')
+                path(d='M296 210L347.962 240V300L296 330L244.038 300V240L296 210Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='650')
+                path(d='M414 210L465.962 240V300L414 330L362.038 300V240L414 210Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='700')
+                path(d='M532 210L583.962 240V300L532 330L480.038 300V240L532 210Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='750')
+                path(d='M650 210L701.962 240V300L650 330L598.038 300V240L650 210Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='800')
+                path(d='M473 315L524.962 345V405L473 435L421.038 405V345L473 315Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='850')
+                path(d='M591 315L642.962 345V405L591 435L539.038 405V345L591 315Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='900')
+                path(d='M414 420L465.962 450V510L414 540L362.038 510V450L414 420Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='900')
+                path(d='M532 420L583.962 450V510L532 540L480.038 510V450L532 420Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='950')
+                path(d='M650 420L701.962 450V510L650 540L598.038 510V450L650 420Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1000')
+                path(d='M473 525L524.962 555V615L473 645L421.038 615V555L473 525Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1050')
+                path(d='M591 525L642.962 555V615L591 645L539.038 615V555L591 525Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1100')
+                path(d='M532 630L583.962 660V720L532 750L480.038 720V660L532 630Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1150')
+                path(d='M650 630L701.962 660V720L650 750L598.038 720V660L650 630Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1200')
+                path(d='M591 735L642.962 765V825L591 855L539.038 825V765L591 735Z' fill='white' fill-opacity='0.2' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1250')
+
+        a.hero__logo(href='#oss-revolution' data-header-logo): img(src='assets/img/open-united-logo.png' srcset='assets/img/open-united-logo-retina.png 2x' width='100' height='91' alt='OpenUnited' title='OpenUnited')
+        button.hero__button(data-header-toggle type='button')
+            span
+            span
+            span
+        ul.hero__navigation(data-header-navigation)
+            li: a(href='#oss-revolution' data-header-link) OSS Revolution
+            li: a(href='#about-us' data-header-link) About us
+            li: a(href='#contact-us' data-header-link) Contact us
+            li: a(href='/OpenUnited-brochure.pdf' target='_blank') Download Brochure
+        .container
+            a(href='#'): img.img(data-aos='zoom-in' data-aos-delay='200' data-aos-duration='1000' src='assets/img/logo-white.png' srcset='assets/img/logo-white-retina.png 2x' alt='OpenUnited' title='OpenUnited')
+            h1 Bees of the Open
+                br.d-none.d-sm-block
+                |&nbsp Source Ecosystem
+
+    // Section The Open-source Software Revolution
+    section.section-xl.section-decor#oss-revolution
+        .section-decor__item(data-aos='fade-down-right' data-aos-duration='1000')
+            svg(width='666' height='855' viewbox='0 0 666 855' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M8.53848 30.2887L60 0.57735L111.462 30.2887V89.7113L60 119.423L8.53848 89.7113V30.2887Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1200' data-aos-delay='50')
+                path(d='M178 0L229.962 30V90L178 120L126.038 90V30L178 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='100')
+                path(d='M296 0L347.962 30V90L296 120L244.038 90V30L296 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='150')
+                path(d='M414 0L465.962 30V90L414 120L362.038 90V30L414 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='200')
+                path(d='M532 0L583.962 30V90L532 120L480.038 90V30L532 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='250')
+                path(d='M650 0L701.962 30V90L650 120L598.038 90V30L650 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='300')
+                path(d='M67.5385 135.289L119 105.577L170.462 135.289V194.711L119 224.423L67.5385 194.711V135.289Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='350')
+                path(d='M237 105L288.962 135V195L237 225L185.038 195V135L237 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='400')
+                path(d='M355 105L406.962 135V195L355 225L303.038 195V135L355 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='450')
+                path(d='M473 105L524.962 135V195L473 225L421.038 195V135L473 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='500')
+                path(d='M591 105L642.962 135V195L591 225L539.038 195V135L591 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='550')
+                path(d='M126.538 240.289L178 210.577L229.462 240.289V299.711L178 329.423L126.538 299.711V240.289Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='600')
+                path(d='M296 210L347.962 240V300L296 330L244.038 300V240L296 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='650')
+                path(d='M414 210L465.962 240V300L414 330L362.038 300V240L414 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='700')
+                path(d='M532 210L583.962 240V300L532 330L480.038 300V240L532 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='750')
+                path(d='M650 210L701.962 240V300L650 330L598.038 300V240L650 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='800')
+                path(d='M473 315L524.962 345V405L473 435L421.038 405V345L473 315Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='850')
+                path(d='M591 315L642.962 345V405L591 435L539.038 405V345L591 315Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='900')
+                path(d='M414 420L465.962 450V510L414 540L362.038 510V450L414 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='900')
+                path(d='M532 420L583.962 450V510L532 540L480.038 510V450L532 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='950')
+                path(d='M650 420L701.962 450V510L650 540L598.038 510V450L650 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1000')
+                path(d='M473 525L524.962 555V615L473 645L421.038 615V555L473 525Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1050')
+                path(d='M591 525L642.962 555V615L591 645L539.038 615V555L591 525Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1100')
+                path(d='M532 630L583.962 660V720L532 750L480.038 720V660L532 630Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1150')
+                path(d='M650 630L701.962 660V720L650 750L598.038 720V660L650 630Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1200')
+                path(d='M591 735L642.962 765V825L591 855L539.038 825V765L591 735Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor-1' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1250')
+        .container
+            h2.text-center The Open-source
+                br
+                |&nbsp Software Revolution
+            .row.row-30.align-items-center.justify-content-center.flex-lg-row-reverse
+                .col-md-10.col-lg-6.text-center
+                    img.img(data-aos='fade-left' data-aos-delay='150' data-aos-duration='750' src='assets/img/team-meeting.svg' alt='' title='')
+                .col-md-10.col-lg-6
+                    .pr-md-30
+                        p#aos-anchor-1 Open-source software (OSS) has been one of the quietest revolutions in history. The incredible victory of OSS over proprietary software has been invisible to the majority of the world’s population. OSS is still not understood by most people - despite its tremendous success since the early 1980s and explosion since the early 2000s.
+                        p Beyond making source code available publicly, the underlying OSS principles of transparency, participation and collaboration on a global scale have led to tens of millions of people working together on common challenges which has created incredible value. There are obvious commercial OSS success stories such as RedHat with its $30 billion valuation and Mulesoft’s valuation at $6.5 billion - acquired by IBM and Salesforce respectively. Still, the general public and many executives do not appreciate that OSS powers practically every part of every digital interaction they have.
+
+            .row.row-30.align-items-center.justify-content-center.mt-40
+                .col-md-10.col-lg-6.text-center
+                    img.img(data-aos='fade-right' data-aos-delay='150' data-aos-duration='750' src='assets/img/team-work.svg' alt='' title='')
+                .col-md-10.col-lg-6
+                    .pr-md-30
+                        p Tech giants such as Microsoft, Facebook and Google run to a large extent on OSS and contribute major amounts of IP and funding to OSS products each year. Further, there are many companies such as Hashicorp, GitLab, Elastic and Confluent that are proud Commercial Open-source Software (COSS) companies with multi-billion dollar
+                        p OSS has beaten proprietary models through engaged distributed communities, with a sense of purpose, operating with an inclusive meritocracy where ideas can come from anywhere and the best ideas win. A company employing even thousands of engineers and investing tens of millions of dollars per year cannot compete with tens or hundreds of thousands of developers that contribute to products because they want to. The crowd will win, every time.valuations. COSS is a proven, highly efficient way of creating and operating businesses.
+
+    // Section OpenUnited Whilst
+    section.section-lg.section-lg--bottom.bg-gray-lighten
+        .container
+            h2.text-center #[span.text-capitalize OpenUnited]
+            h5.block-lg.ml-auto.mr-auto.text-center Whilst the OSS ecosystem is vibrant and powerful, it faces challenges and unanswered questions. For example:
+            .row.row-30.mt-40.mt-55
+                .col-sm-6.col-lg-4
+                    .feature(data-aos='fade-up' data-aos-delay='100' data-aos-duration='750') How can a person or company with a closed-source product predictably move it into an OSS model and build a community of contributors?
+                    .feature(data-aos='fade-up' data-aos-delay='150' data-aos-duration='900') How should companies “connect” with the OSS world? For example, if a company today takes but does not give to OSS, how can it create a strategy to mature its posture in relation to OSS to gain efficiency, new prospects and so it remains an employer of choice for top talent?
+                .col-sm-6.col-lg-4
+                    .feature(data-aos='fade-up' data-aos-delay='150' data-aos-duration='750') How can companies create an internal “product factory” that leverages OSS principles and dynamics for their own private products?
+                    .feature(data-aos='fade-up' data-aos-delay='200' data-aos-duration='900') How can graphic designers, product managers, technical writers and other potential contributors get involved when the platforms, documentation and processes that underpin OSS are targeted only at software developers?
+                .col-sm-6.col-lg-4
+                    .feature(data-aos='fade-up' data-aos-delay='200' data-aos-duration='750') How can the time to understand products and available tasks be streamlined so that the barrier for contributors is lowered?
+                    .feature(data-aos='fade-up' data-aos-delay='250' data-aos-duration='900') How can companies verify the work and approach of developers and other digital professionals in depth before hiring?
+            h3.mt-5.block-lg.ml-auto.mr-auto.text-center At #[span.text-capitalize OpenUnited], we solve these challenges and answer such questions - our vision is to be the bees of the open-source ecosystem.
+
+    // Section OpenUnited and Your Company
+    section.section-lg.section-decor.section-decor--right#about-us
+        .section-decor__item
+            svg(width='666' height='855' viewbox='0 0 666 855' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M8.53848 30.2887L60 0.57735L111.462 30.2887V89.7113L60 119.423L8.53848 89.7113V30.2887Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1200' data-aos-delay='50')
+                path(d='M178 0L229.962 30V90L178 120L126.038 90V30L178 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='100')
+                path(d='M296 0L347.962 30V90L296 120L244.038 90V30L296 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='150')
+                path(d='M414 0L465.962 30V90L414 120L362.038 90V30L414 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='200')
+                path(d='M532 0L583.962 30V90L532 120L480.038 90V30L532 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='250')
+                path(d='M650 0L701.962 30V90L650 120L598.038 90V30L650 0Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='300')
+                path(d='M67.5385 135.289L119 105.577L170.462 135.289V194.711L119 224.423L67.5385 194.711V135.289Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='350')
+                path(d='M237 105L288.962 135V195L237 225L185.038 195V135L237 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='400')
+                path(d='M355 105L406.962 135V195L355 225L303.038 195V135L355 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='450')
+                path(d='M473 105L524.962 135V195L473 225L421.038 195V135L473 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='500')
+                path(d='M591 105L642.962 135V195L591 225L539.038 195V135L591 105Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='550')
+                path(d='M126.538 240.289L178 210.577L229.462 240.289V299.711L178 329.423L126.538 299.711V240.289Z' stroke='#44AFE4' stroke-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='600')
+                path(d='M296 210L347.962 240V300L296 330L244.038 300V240L296 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='650')
+                path(d='M414 210L465.962 240V300L414 330L362.038 300V240L414 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='700')
+                path(d='M532 210L583.962 240V300L532 330L480.038 300V240L532 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1400' data-aos-delay='750')
+                path(d='M650 210L701.962 240V300L650 330L598.038 300V240L650 210Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1450' data-aos-delay='800')
+                path(d='M473 315L524.962 345V405L473 435L421.038 405V345L473 315Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='850')
+                path(d='M591 315L642.962 345V405L591 435L539.038 405V345L591 315Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='900')
+                path(d='M414 420L465.962 450V510L414 540L362.038 510V450L414 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='900')
+                path(d='M532 420L583.962 450V510L532 540L480.038 510V450L532 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='950')
+                path(d='M650 420L701.962 450V510L650 540L598.038 510V450L650 420Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1000')
+                path(d='M473 525L524.962 555V615L473 645L421.038 615V555L473 525Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1050')
+                path(d='M591 525L642.962 555V615L591 645L539.038 615V555L591 525Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1100')
+                path(d='M532 630L583.962 660V720L532 750L480.038 720V660L532 630Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1250' data-aos-delay='1150')
+                path(d='M650 630L701.962 660V720L650 750L598.038 720V660L650 630Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1300' data-aos-delay='1200')
+                path(d='M591 735L642.962 765V825L591 855L539.038 825V765L591 735Z' fill='#44AFE4' fill-opacity='0.2' data-aos-anchor='#aos-anchor' data-aos='fade-up-left' data-aos-duration='1350' data-aos-delay='1250')
+        .container
+            .block-lg.ml-auto.mr-auto.text-center
+                h2 ABOUT US
+                h5.font-weight-normal.mt-3 Our Product Factory Platform is now available to enterprise customers to create open-source style transparency, collaboration and reuse within your company.
+                h5#aos-anchor #[span.text-capitalize OpenUnited] can help your company to:
+            .row.row-30.mt-40.mt-55.justify-content-center
+                .col-sm-6.col-lg-5
+                    .advantage
+                        .advantage__count 1
+                        .advantage__body Realise your own internal digital Product Factory that breaks down silos.
+                .col-sm-6.col-lg-5
+                    .advantage
+                        .advantage__count 2
+                        .advantage__body Benefit from open-source dynamics such as transparency, collaboration and reuse internally ("inner source").
+                .col-sm-6.col-lg-5
+                    .advantage
+                        .advantage__count 3
+                        .advantage__body Create an OSS strategy including helping to safely promote private software projects to OSS or COSS products.
+                .col-sm-6.col-lg-5
+                    .advantage
+                        .advantage__count 4
+                        .advantage__body Improve your OSS posture and perception to ensure your employer branding is attractive to top digital talent.
+                .col-sm-6.col-lg-5
+                    .advantage
+                        .advantage__count 5
+                        .advantage__body Hire proven top talent based on OSS contributions.
+            .divider
+            .text-center
+                a.btn.btn-lg.btn-success.d-inline-flex.align-items-center(href='/OpenUnited-brochure.pdf' target='_blank')
+                    +svg('download', 25, 25, 'mr-2')
+                    | Download Brochure
+
+    section.section-decor-modern.section-xs.bg-primary.text-center#contact-us
+        .container
+            .row.row-30.align-items-center
+                .col-md-6.text-md-left: a(href='#'): img.img(src='assets/img/logo-white.png' width='220' height='34' srcset='assets/img/logo-white-retina.png 2x' alt='OpenUnited' title='OpenUnited')
+                .col-md-6.text-md-right: a.link(href='mailto:team@openunited.com') team@openunited.com

@@ -1,0 +1,15 @@
+// Section Contact Us
+section.section-decor-modern.section-lg.section-lg--bottom.bg-primary.text-center#contact-us(data-aos='fade-in')
+    .section-decor-modern__image(data-aos='fade-up-left' data-aos-duration='1500'): img(src='assets/img/logo-outline-big.png' alt='OpenUnited' title='OpenUnited')
+    .container
+        .row.justify-content-center
+            .col-lg-10.col-xl-8
+                //- a(href='#'): img.img(data-aos='zoom-in' data-aos-delay='200' data-aos-duration='1000' src='assets/img/logo-white.png' srcset='assets/img/logo-white-retina.png 2x' width='322' height='50' alt='OpenUnited' title='OpenUnited')
+                h2.mt-4 Contact us
+                form.row.mt-5(method='post' action='/')
+                    .col-md-6.form-group: input.form-control.form-control--lg(type='text' placeholder='Name' name='name' required)
+                    .col-md-6.form-group: input.form-control.form-control--lg(type='text' placeholder='Last Name' name='last_name' required)
+                    .col-md-6.form-group: input.form-control.form-control--lg(type='email' placeholder='Email' name='email' required)
+                    .col-md-6.form-group: input.form-control.form-control--lg(type='tel' placeholder='Phone' name='phone' required)
+                    .col-md-12.form-group: textarea.form-control.form-control--lg(placeholder='Message' name='message' required)
+                    .col-md-12.mt-md-1: button.btn.btn-lg.btn-light(type='submit') Contact Us

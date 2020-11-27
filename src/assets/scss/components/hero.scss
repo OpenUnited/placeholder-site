@@ -1,0 +1,194 @@
+// Hero
+.hero {
+    @extend %context-dark;
+    z-index: 10;
+    position: relative;
+    padding-top: rem(120);
+    padding-bottom: rem(150);
+    text-align: center;
+    background-color: $primary;
+
+    &__image {
+        z-index: -1;
+        position: absolute;
+        top: rem(11);
+        left: rem(24);
+        bottom: 0;
+        right: 55%;
+
+        img {
+            max-height: 100%;
+        }
+    }
+
+    &__decor {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 55%;
+        right: rem(-51);
+        bottom: rem(-37);
+        text-align: right;
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        z-index: 1000;
+        width: rem(100);
+        bottom: rem(15);
+        opacity: 0;
+        transition: .3s ease-out opacity;
+
+        &.start {
+            opacity: 1;
+            animation-name: beesStart;
+            animation-duration: 9s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+        @include media($screen-xl) {
+            bottom: rem(80);
+        }
+    }
+
+    &__button {
+        z-index: 1025;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 40px;
+        height: 32px;
+        cursor: pointer;
+        user-select: none;
+        box-shadow: none !important; /* stylelint-disable-line declaration-no-important */
+        outline: none !important; /* stylelint-disable-line declaration-no-important */
+        border: 0 !important; /* stylelint-disable-line declaration-no-important */
+        background-color: transparent;
+
+        span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            background-color: $white;
+            transform-origin: 4px 0;
+            transition: transform .5s cubic-bezier(.77, .2, .05, 1), background .5s cubic-bezier(.77, .2, .05, 1), opacity .55s ease;
+
+            &:nth-child(3) {
+                transform-origin: 0% 100%;
+            }
+        }
+
+        &.active {
+            span {
+                opacity: 1;
+                transform: rotate(45deg) translate(-2px, -1px);
+
+                &:nth-child(2) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(.2, .2);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(0, -1px);
+                }
+            }
+        }
+
+        @include media($screen-xl) {
+            display: none;
+        }
+    }
+
+    &__navigation {
+        position: fixed;
+        z-index: 1024;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-family-sec;
+        font-size: rem(24);
+        font-weight: 700;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-out opacity, .3s ease-out visibility;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        li {
+            margin-bottom: 30px;
+        }
+
+        @include media($screen-xl) {
+            position: absolute;
+            top: rem(31);
+            left: 0;
+            right: 0;
+            bottom: auto;
+            flex-direction: row;
+            background-color: transparent;
+            text-align: left;
+            opacity: 1;
+            visibility: visible;
+
+            li {
+                display: inline-block;
+                margin-bottom: 0;
+
+                + li {
+                    margin-left: rem(30);
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            &,
+            &:focus,
+            &:active {
+                color: $white;
+            }
+
+            &:hover {
+                color: $body-color;
+            }
+        }
+    }
+
+    a + h1,
+    img + h1 {
+        margin-top: rem(55);
+    }
+
+    @include media($screen-md) {
+        padding-top: rem(180);
+        padding-bottom: rem(180);
+    }
+
+    @include media($screen-lg) {
+        padding-top: rem(237);
+        padding-bottom: rem(280);
+
+        img + h1 {
+            margin-top: rem(40);
+        }
+    }
+}

@@ -1,0 +1,104 @@
+// Typography
+#{headings()} {
+    font-family: $font-family-sec;
+    line-height: 1.28;
+    font-weight: 700;
+    color: $headings-color;
+    text-transform: uppercase;
+}
+
+h1,
+.heading-1 {
+    @include fluid-typography(32px, 70px);
+    line-height: 1.2;
+}
+
+h2,
+.heading-2 {
+    @include fluid-typography(28px, 40px);
+    line-height: (55 / 40);
+    color: $primary;
+}
+
+h3,
+.heading-3 {
+    font-family: $font-family-main;
+    font-weight: 500;
+    color: $primary;
+    text-transform: none;
+    @include fluid-typography(24px, 32px);
+    line-height: (46 / 36);
+}
+
+h4,
+.heading-4 {
+    @include fluid-typography(22px, 28px);
+    line-height: (36 / 28);
+}
+
+h5,
+.heading-5 {
+    font-family: $font-family-main;
+    text-transform: none;
+    font-weight: 500;
+    @include fluid-typography(18px, 24px);
+    line-height: (34 / 24);
+}
+
+h6,
+.heading-6 {
+    font-size: rem(16);
+    line-height: (34 / 24);
+}
+
+a {
+    text-decoration: none;
+    transition: .3s ease-out color;
+
+    &,
+    &:focus,
+    &:active {
+        color: $primary;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+* + p {
+    margin-top: rem(15);
+
+    @include media($screen-md) {
+        margin-top: rem(25);
+    }
+}
+
+h2 + .row {
+    margin-top: rem(35);
+
+    @include media($screen-md) {
+        margin-top: rem(55);
+    }
+
+    @include media($screen-lg) {
+        margin-top: rem(72);
+    }
+}
+
+h2 + h5 {
+    margin-top: rem(20);
+}
+
+h5 + h5 {
+    margin-top: rem(25);
+}
+
+.link {
+    &,
+    &:focus,
+    &:active,
+    &:hover {
+        text-decoration: none;
+    }
+}

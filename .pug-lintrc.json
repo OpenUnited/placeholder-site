@@ -1,0 +1,47 @@
+{
+  "validateIndentation": 4,
+  "validateAttributeQuoteMarks": "'",
+  "disallowTrailingSpaces": true,
+  "maximumLineLength": null,
+  "maximumNumberOfLines": null,
+  "disallowAttributeConcatenation": true,
+  "disallowAttributeInterpolation": null,
+  "disallowAttributeTemplateString": null,
+  "disallowDuplicateAttributes": true,
+  "validateAttributeSeparator": " ",
+  "disallowIdAttributeWithStaticValue": null,
+  "disallowIdLiteralsBeforeAttributes": null,
+  "requireIdLiteralsBeforeAttributes": null,
+  "requireClassLiteralsBeforeIdLiterals": null,
+  "disallowClassLiterals": null,
+  "disallowClassAttributeWithStaticValue": true,
+  "requireClassLiteralsBeforeAttributes": null,
+  "disallowSpaceAfterCodeOperator": null,
+  "requireSpaceAfterCodeOperator": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "requireSpacesInsideAttributeBrackets": null,
+  "disallowSpecificAttributes": [
+    {
+      "a": "name"
+    }
+  ],
+  "requireSpecificAttributes": [
+    {
+      "input": "type"
+    }
+  ],
+  "disallowSpecificTags": null,
+  "disallowStringConcatenation": true,
+  "disallowTemplateString": null,
+  "disallowStringInterpolation": null,
+  "disallowTagInterpolation": null,
+  "requireLowerCaseAttributes": true,
+  "requireLowerCaseTags": true,
+  "validateDivTags": true,
+  "validateSelfClosingTags": true,
+  "validateTemplateString": true,
+  "requireStrictEqualityOperators": true,
+  "disallowBlockExpansion": null,
+  "disallowHtmlText": null,
+  "disallowLegacyMixinCall": true
+}

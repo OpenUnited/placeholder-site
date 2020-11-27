@@ -1,0 +1,21 @@
+// Form
+.form-group {
+    margin-bottom: rem(30);
+}
+
+.form-control {
+    &--lg {
+        padding-left: rem(20);
+        padding-right: rem(20);
+        height: rem(60);
+        font-size: rem(22);
+        border-radius: rem(6);
+        color: rgba($body-color, .95);
+    }
+}
+
+textarea {
+    &.form-control--lg {
+        height: rem(160);
+    }
+}

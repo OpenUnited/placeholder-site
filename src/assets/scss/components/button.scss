@@ -1,0 +1,31 @@
+// Buttons
+.button {
+    padding: rem(12) rem(30);
+    font-size: rem(18);
+    box-shadow: none;
+    outline: none;
+    border-radius: rem(8);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: $font-family-sec;
+    font-weight: 400;
+    line-height: 1;
+    border: rem(2) solid $body-color;
+    transition: .3s ease-out color, .3s ease-out background-color, .3s ease-out border;
+
+    &--white {
+        &,
+        &:focus,
+        &:active {
+            color: $body-color;
+            background-color: $white;
+            border-color: $white;
+        }
+
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border-color: $white;
+        }
+    }
+}

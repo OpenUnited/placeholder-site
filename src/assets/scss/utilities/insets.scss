@@ -1,0 +1,6 @@
+// Insets
+@include media($screen-md) {
+    .pr-md-30 {
+        padding-right: rem(30);
+    }
+}

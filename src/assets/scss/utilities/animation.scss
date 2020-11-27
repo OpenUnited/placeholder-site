@@ -1,0 +1,16 @@
+@keyframes beesStart {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    66%,
+    100% {
+        left: 105%;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,35 @@
+// Advantage
+.advantage {
+    height: 100%;
+    padding: rem(20);
+    font-size: rem(20);
+    background-color: $white;
+    border-radius: rem(8);
+    box-shadow: $shadow-1;
+    text-align: center;
+
+    &__count {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(15);
+        width: rem(80);
+        height: rem(80);
+        font-size: rem(40);
+        border-radius: 50%;
+        color: $white;
+        background-color: rgba($primary, .68);
+    }
+
+    @include media($screen-lg) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        &__count {
+            flex-shrink: 0;
+            margin-bottom: 0;
+            margin-right: rem(30);
+        }
+    }
+}

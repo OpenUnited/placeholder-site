@@ -1,0 +1,26 @@
+%context-dark {
+    &,
+    #{headings()} {
+        color: $white;
+    }
+
+    a {
+        &,
+        &:focus,
+        &:active {
+            color: $white;
+        }
+
+        &:hover {
+            color: $body-color;
+        }
+    }
+}
+
+%context-light {
+    color: $body-color;
+
+    #{headings()} {
+        color: $headings-color;
+    }
+}

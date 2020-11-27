@@ -1,0 +1,9 @@
+// Backgrounds
+.bg-gray-lighten {
+    background-color: $gray-lighten;
+}
+
+.bg-primary {
+    @extend %context-dark;
+    background-color: $primary !important; /* stylelint-disable-line declaration-no-important */
+}
